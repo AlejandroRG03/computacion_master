@@ -29,12 +29,11 @@ ax3.set_xlim([-2,2])
 ax3.set_ylim([-1,1])
 
 
-ax1.set_title('add_subplot(3,3,(1,3))', size=10)
-ax2.set_title('add_subplot(3,3,(4,5))', size=10)
-ax3.set_title('add_subplot(3,3,(6,9))', size=10)
-ax4.set_title('add_subplot(3,3,7)', size=10)
-
-ax5.set_title('add_subplot(3,3,8)', size=10)
+ax1.set_title('subplot(3,3,(1,3))', size=10)
+ax2.set_title('subplot(3,3,(4,5))', size=10)
+ax3.set_title('subplot(3,3,(6,9))', size=10)
+ax4.set_title('subplot(3,3,7)', size=10)
+ax5.set_title('subplot(3,3,8)', size=10)
 
 
 
