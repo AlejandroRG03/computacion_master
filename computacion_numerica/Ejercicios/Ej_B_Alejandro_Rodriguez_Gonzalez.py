@@ -67,9 +67,9 @@ print(f'R = {R}')
 
 if len(data.T) == 3:
 
-    sA = np.diag(np.linalg.inv(C))
+    sA = np.sqrt(np.diag(np.linalg.inv(C)))
 else:
-    sA = Syx * np.diag(np.linalg.inv(C))
+    sA = Syx * np.sqrt(np.diag(np.linalg.inv(C)))
 
 '''
 print(f'A = {A}')
