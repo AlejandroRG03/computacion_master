@@ -28,7 +28,9 @@ sp = np.sqrt(np.diag(cov))
 
 yp = np.polyval(p, xp)
 
-plt.plot(xp,yp)
+etiqueta = r'$\sum_{n=0}^{%d}a_n x^n$'%(n)
+
+plt.plot(xp,yp, label = etiqueta)
 
 ypred = np.polyval(p, x)
 
@@ -44,5 +46,6 @@ print('Nota: el polinomio es de la forma p(x) = a_0 + a_1x + ... + a_nx^n')
 print()
 print(f'El chi^2 es {chi2}')
 
+plt.legend()
 plt.title('Ajuste con polyfit')
 plt.show()

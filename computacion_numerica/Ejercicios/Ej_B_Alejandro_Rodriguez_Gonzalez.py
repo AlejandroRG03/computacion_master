@@ -20,7 +20,10 @@ else:
     s = np.ones(len(y))
 
 
-plt.plot(x,y,'o', label = 'datos') # Vemos si los puntos siguen forma polinómica
+if len(data.T) == 3:
+    plt.errorbar(x,y,s, fmt = 'o', label = 'datos')
+else:
+    plt.plot(x,y,'o', label = 'datos') # Vemos si los puntos siguen forma polinómica
 plt.xlabel('x')
 plt.ylabel('y')
 

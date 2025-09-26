@@ -23,7 +23,7 @@ ax.plot_wireframe(x,y, f([x,y]))
 xmin = ymin = -10
 xmax = ymax = 10
 
-minimo = minimize(f, x0=(0,0), bounds=([xmin,xmax],[ymin,ymax]))
+minimo = minimize(f, x0=(1,1), bounds=([xmin,xmax],[ymin,ymax]))
 x0, y0 = minimo.x
 fmin = minimo.fun
 print(f'El mínimo es x = {x0:.2f}, y = {y0:.2f}, f(x,y) = {fmin:.2f}')
