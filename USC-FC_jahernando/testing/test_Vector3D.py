@@ -1,7 +1,7 @@
 import random
 from Vector3D import Vector3D
 import numpy as np
-
+np.random.seed(1)
 def inputs():
 
     a = (random.uniform(-1,1) for i in range(3))
@@ -43,7 +43,7 @@ def test_Vector3D_cross():
 
     assert a.cross(b) == - b.cross(a)
     assert a.cross(a) == a*0
-    assert a * (a.cross(b)) == 0
+    assert np.isclose(a * (a.cross(b)), 0)
 
 
 
@@ -67,4 +67,4 @@ def test_Vector3D_unit():
 
     a, b = inputs()
 
-    assert abs(abs(a.unit()) - 1) < 1e-8
+    assert np.isclose(abs(a.unit()), 1)

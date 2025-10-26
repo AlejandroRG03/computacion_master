@@ -98,8 +98,7 @@ class Vector3D:
         return self / mod
     
     def __neg__(self):
-        """ return the negative vector
-        """
+
         return Vector3D(self.x, self.y, self.z) * -1
     
     def __getitem__(self, index):
@@ -111,4 +110,4 @@ class Vector3D:
         ls = [self.x, self.y, self.z]
         ls[index] = value
 
-        return Vector3D(ls[0], ls[1], ls[2])
+        return Vector3D(*ls)
