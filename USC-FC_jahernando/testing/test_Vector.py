@@ -4,8 +4,8 @@ import numpy as np
 np.random.seed(1)
 def inputs():
 
-    a = (random.uniform(-1,1) for i in range(10))
-    b = (random.uniform(-1,1) for i in range(10))
+    a = [random.uniform(-1,1) for i in range(10)]
+    b = [random.uniform(-1,1) for i in range(10)]
     
     return Vector(a), Vector(b)
 
